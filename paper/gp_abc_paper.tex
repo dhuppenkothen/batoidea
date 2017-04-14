@@ -1,0 +1,83 @@
+% This document is part of the ShiftyLines project.
+% Copyright 2016 the authors.
+
+\documentclass[12pt]{emulateapj}
+\usepackage{graphicx}
+%\usepackage{epsfig}
+\usepackage{times}
+\usepackage{natbib}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsbsy}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{url}
+%\usepackage{subfigure}
+\usepackage{microtype}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{tabularx}
+\usepackage{subfigure}
+\DeclareMathOperator\erf{erf}
+
+
+%\usepackage{longtable}%\usepackage[stable]{footmisc}
+%\usepackage{color}
+%\bibliographystyle{apj}
+
+\newcommand{\project}[1]{\textsl{#1}}
+\newcommand{\fermi}{\project{Fermi}}
+\newcommand{\rxte}{\project{RXTE}}
+\newcommand{\chandra}{\project{Chandra}}
+\newcommand{\athena}{\project{Athena+}}
+\newcommand{\xmm}{\project{XMM-Newton}}
+\newcommand{\given}{\,|\,}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\counts}{y}
+\newcommand{\pars}{\theta}
+\newcommand{\mean}{m}
+\newcommand{\likelihood}{{\mathcal L}}
+\newcommand{\Poisson}{{\mathcal P}}
+\newcommand{\Uniform}{{\mathcal U}}
+\newcommand{\bkg}{\mathrm{bkg}}
+\newcommand{\word}{\phi}
+
+%\usepackage{breqn}
+
+%\newcommand{\bs}{\boldsymbol}
+
+\begin{document}
+
+\title{Precise Probabilistic Inference of Spectral-Timing Properties from Multi-Wavelength Observations of Black Holes}
+
+%\author{}
+ 
+%  \altaffiltext{1}{Center for Data Science, New York University, 726 Broadway, 7th Floor, New York, NY 10003}
+%  \altaffiltext{2}{{\tt daniela.huppenkothen@nyu.edu}}
+
+\begin{abstract}
+Understanding the formation and growth of black holes is of key importance to our knowledge of both stellar evolution as 
+well as of how galaxies form and evolve. In recent years spectral-timing, the combined use of both temporal and wavelength information,
+has become the standard in inferring physical properties like mass and spin of these systems. Current state-of-the-art techniques 
+heavily rely on Fourier analysis to derive important observables like time lags, power spectra and coherence estimates. However, these 
+methods will rapidly become unreliable in the face of future multi-wavelength surveys that largely rely on an irregular sampling of observations.
+Alternative methods can currently only model light curves at different wavelengths independently, or make strong assumptions about the 
+underlying emission processes. Here, we explore the use of fast Gaussian Process inference combined with Approximate Bayesian 
+Computation to build probabilistic models of multi-wavelength variability of black hole light curves. We show that (1) Gaussian Processes 
+can effectively model the light curve at different wavelengths and derive accurate time lags even in unevenly sampled data, and (2) in 
+the absence of full physical models for these systems, Approximate Bayesian Computation allows us to measure important properties of the 
+data, including power spectral shape, time lags, coherence, and flux distribution simultaneously.
+
+\end{abstract}
+
+\keywords{methods:statistics}
+
+\section{Introduction}
+
+\bibliography{td}
+\bibliographystyle{apj}
+
+\end{document}
+
+
