@@ -1,0 +1,7 @@
+Calculating / Computing an estimator for the power spectral density given the observed lightcurve i.e. the time series. 
+
+1. Perform simulations (TK95) with fundamental observables power-law PSD (for a range of indices) and gaussian or lognormal PDF 
+2. Generate ideal i.e. well sampled and long realisations /surrogate data
+3. Impose observational cadence i.e. resample ideal LCs and impose the observed gaps and window
+4. Evaluate periodogram  for each realisation
+5. Evaluate the best fit parameters
